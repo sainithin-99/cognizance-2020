@@ -3,3 +3,5 @@ this is the notepad made in git bash
 new line
 
 second new line
+
+3rd new line
