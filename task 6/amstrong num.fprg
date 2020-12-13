@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="home"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-19 02:50:45 PM"/>
+        <attribute name="created" value="aG9tZTtERVNLVE9QLVEyS0Q2OFY7MjAyMC0xMS0xOTswMjo0Mjo1NyBQTTsyNzU4"/>
+        <attribute name="edited" value="aG9tZTtERVNLVE9QLVEyS0Q2OFY7MjAyMC0xMS0xOTswMjo1MDo0NSBQTTsxOzI4NjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, i, cube, sum, r" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter number&quot;" newline="True"/>
+            <input variable="num"/>
+            <assign variable="i" expression="num"/>
+            <assign variable="sum" expression="0"/>
+            <assign variable="cube" expression="1"/>
+            <while expression="i&lt;&gt;0">
+                <assign variable="r" expression="i%10"/>
+                <assign variable="cube" expression="r^3"/>
+                <assign variable="sum" expression="sum + cube"/>
+                <assign variable="i" expression="i/10"/>
+            </while>
+            <if expression="num == sum">
+                <then>
+                    <output expression="&quot; yes it is a amstrong num &quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot; no it is not a amstrong num &quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
